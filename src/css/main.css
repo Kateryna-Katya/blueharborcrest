@@ -21,3 +21,19 @@ font-family: "DM Serif Display", sans-serif;
     color: #dbe1e9;
     margin-top: 320px;
 }
+@media only screen and (min-width: 1440px) {
+.home-section {
+        background-image: url("/img/home/desk.png");
+height: 720px;
+}
+.home-label{
+    margin-top: 80px;
+    font-size: 32px;
+    text-align: left;
+}
+.home-title{
+    margin-top: 32px;
+    font-size: 64px;
+    text-align: left;
+}
+}
