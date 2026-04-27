@@ -1,0 +1,23 @@
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 800px;
+}
+.home-label{
+        font-weight: 400;
+        font-size: 24px;
+        color: #708195;
+        margin-top: 48px;
+}
+.home-title{
+font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #dbe1e9;
+    margin-top: 320px;
+}
