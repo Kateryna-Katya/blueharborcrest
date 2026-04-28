@@ -37,3 +37,83 @@ height: 720px;
     text-align: left;
 }
 }
+/* About the Game */
+.about-section{
+    background: #0b1320;
+}
+.about-title{
+    font-size: 17px;
+}
+.desk{
+    display: none;
+}
+.title-container {
+background-image: url("/img/title/mob.png");
+background-repeat: no-repeat;
+background-position: center right;
+background-size: auto;
+    margin-bottom: 56px;
+height: 30px;
+}
+@media only screen and (min-width: 1440px) {
+    .desk{
+        display: block;
+    }
+    .title-container {
+        background-image: url("/img/title/desk.png");
+      margin-bottom: 64px;
+    height: 36px;
+    }
+}
+/* Core Gameplay */
+.core-section{
+    background-image: url("/img/core/mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 178px;
+    height: 988px;
+}
+.core-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.core-item{
+border-radius: 8px;
+    padding: 32px 16px;
+    width: 343px;
+    height: 96px;
+background: linear-gradient(180deg, rgba(11, 19, 32, 0) 0%, #0b1320 100%);
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.core-text{
+    margin-top: 56px;
+        font-weight: 200;
+        font-size: 20px;
+        color: #708195;
+}
+@media only screen and (min-width: 1440px) {
+ .core-section{
+    background-image: url("/img/core/desk.png");
+    background-size: 100% 420px;
+height: 942px;
+ }
+.core-list{
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+.core-item{
+        padding: 32px;
+        width: 204px;
+        height: 178px;
+flex-direction: column;
+}
+.core-text{
+margin-top: 64px;
+font-size: 24px;
+}
+}
