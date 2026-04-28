@@ -117,3 +117,60 @@ margin-top: 64px;
 font-size: 24px;
 }
 }
+/* Signal System */
+.signal-section{
+    background: #0b1320;
+}
+.signal-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.signal-item{
+    padding: 16px;
+        width: 343px;
+        height: 440px;
+background: #0e1e2e;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+}
+.signal-wrapper{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    color: #708195;
+}
+.signal-title-item{
+font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #dbe1e9;
+}
+@media only screen and (min-width: 1440px) {
+ .signal-item{
+padding: 32px;
+    width: 994px;
+    height: 316px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+ }
+ .signal-wrapper{
+    padding: 32px;
+        width: 343px;
+        height: 252px;
+ }
+.signal-title-item{
+    font-size: 24px;
+}
+.signal-item-two{
+    flex-direction: row-reverse;
+}
+}
