@@ -53,7 +53,9 @@ background-repeat: no-repeat;
 background-position: center right;
 background-size: 200px auto;
     margin-bottom: 56px;
-height: 30px;
+height: 50px;
+display: flex;
+align-items: center;
 }
 @media only screen and (min-width: 1440px) {
     .desk{
@@ -63,7 +65,7 @@ height: 30px;
         background-image: url("/img/title/desk.png");
 background-size: auto;
       margin-bottom: 64px;
-    height: 36px;
+
     }
 }
 /* Core Gameplay */
@@ -217,5 +219,208 @@ height: 760px;
         width: 204px;
         height: 178px;
         text-align: center;
+}
+}
+/* Gallery */
+.gallery-section{
+    background: #0b1320;
+}
+.gallery-title{
+    background-size: 280px auto;
+}
+.btn {
+    display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+    .gallery-container {
+        position: relative;
+    }
+
+    .btn {
+        display: block;
+        border-radius: 100px;
+        border: none;
+        background-color: #ffb76b;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .gallery-swiper {
+        width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .gallery-next {
+        right: 8%;
+        z-index: 2;
+    }
+
+    .gallery-prev {
+        left: 8%;
+        z-index: 2;
+    }
+.gallery-title {
+    background-size: 1100px  auto;
+}
+}
+/* FAQ */
+.faq-title{
+    background-size: 300px auto;
+}
+
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    margin: 0 auto;
+    gap: 12px;
+
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+}
+
+.faq-acc-el-title {
+    margin-bottom: 0;
+}
+
+.faq-acc-el-trigger {
+    border: none;
+    background: inherit;
+    width: 343px;
+    height: auto;
+font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #dbe1e9;
+    border-bottom: 1px solid #023356;
+    padding: 8px 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: transform 0.3s ease;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: inherit;
+    border-radius: 100%;
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el.open .faq-acc-arr {
+    transform: rotate(180deg);
+}
+
+.faq-acc-el-descr-frame {
+    background: inherit;
+    width: 343px;
+
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    border: none;
+    padding: 8px 30px 8px 0;
+    background: inherit;
+    width: 343px;
+    max-height: 500px;
+color: #708195;
+}
+
+@media only screen and (min-width: 1440px) {
+.faq-title {
+        background-size: 1140px auto;
+}
+    .faq-acc {
+        width: 994px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .faq-acc-el-trigger {
+        width: 994px;
+        font-size: 24px;
+    }
+
+    .faq-acc-el-descr-frame {
+        width: 994px;
+    }
+
+    .faq-acc-el.open .faq-acc-el-descr-frame {
+        width: 994px;
+    }
+    .mob{
+        display: none;
+    }
+}
+/* Contact */
+.contact-section{
+    background-image: url("/img/contact/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 467px;
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.contact-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+@media only screen and (min-width: 1440px) {
+.contact-section {
+        background-image: url("/img/contact/desk.png");
+height: 475px;
+    }
+.contact-wrapper{
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
 }
 }
